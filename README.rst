@@ -15,7 +15,9 @@ The ``files/rhino_models/chandelier/`` directory contains a Rhino [#]_ model and
  
 .. image:: /qmat/chandelier_documentation/raw/master/files/rhino_models/chandelier/chandelier_screenshot2.png
 
-The specification for the ring can be found .. _here: /qmat/chandelier_documentation/raw/master/files/dimensions_steel_ring.png
+The specification for the ring can be found here_.
+
+.. _here: /qmat/chandelier_documentation/raw/master/files/dimensions_steel_ring.png
 
 rigging
 
