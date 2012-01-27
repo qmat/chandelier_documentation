@@ -31,9 +31,6 @@ The installation was done by a professional rigger. Ask Matt or Vincent about th
 Software and deployment
 ================
 
-Quatz and Infohub
----------------
-
 The chandelier software consists of two main applications: the Quatz application and the Infohub web application. Quatz_ is a Cocoa application that drives the screens by loading Web or Quartz Composer views. What is displayed by the Quatz application is determined by the Infohub application. Infohub_ is a Django python web site which allows users to upload Processing sketches and Quartz Composer files. These can then be displayed on the chandelier by changing the display mode on the infohub website.
 
 .. _Quatz: http://www.github.com/qmat/chandelier_quatz/
@@ -43,41 +40,21 @@ Both applications are deployed on the Mac Mini. Access to the website from outsi
 
 The Infohub application does not only serve to administer the chandelier, it also aggregates updates from the web services the MAT group uses. Currently these are Google Docs, Github, GMail, qmat.net, qmat.net/wiki, twitter, and Vimeo. Infohub's python requirements can be installed by using pip on the requirements.txt file in that is in the root directory of the Infohub repository.
 
-The Quatz and Infohub applications communicate using the ZeroMQ [#] library. The Quatz application can be manually started or stopped from the web site. The Infohub web application is daemonized by Apple's launchd and runs behind Nginx in a reverse proxy configuration.
+The Quatz and Infohub applications communicate using the ZeroMQ [#]_ library. The Quatz application can be manually started or stopped from the web site. The Infohub web application is daemonized by Apple's launchd and runs behind Nginx in a reverse proxy configuration.
 
 .. image:: /qmat/chandelier_documentation/raw/master/files/software/deployment.png
 
-
+The door bell button connects to an IP camera. When pressed it activates the camera's alarm, the camera performs an HTTP call into the Django web application and starts uploading images to the Mac Mini through FTP. Upon receiving the HTTP call the web application starts the door bell mode in the Quatz application.
 
 Hardware
 ======
 
-diagram
+The screens are driven by a single Mac Mini and two EMS Xtreme4vs [#]_ boxes. Each EMS box drives eight display panels, but with only 4 separate outputs. Therefore each output is displayed by 2 screens. The screens are configured as in the image below.
 
-Screen
-- Hannstar HSD170ME13
+.. image:: /qmat/chandelier_documentation/raw/master/files/hardware/configuration_screens.png
 
-ems boxes
-
-mac mini<br>
-
-TO DO / Bugs
-=========
-
-
-Future features
-==========
-
-real processing view
-
-mode sequencer
-
-interactivity
-
-tie in room sensors
-
-helmet cam
-
+The screens appear to the Mac Mini as two separate displays with a total resolution of 3200 by 600 pixels.
 
 .. [#] http://www.rhino3d.com/
-.. [3] http://www.zeromq.org/
+.. [#] http://www.zeromq.org/
+.. [#] http://www.ems-imaging.com/online/products/Xtreme4vs.html
