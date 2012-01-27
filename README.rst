@@ -31,23 +31,23 @@ The installation was done by a professional rigger. Ask Matt or Vincent about th
 Software and deployment
 ================
 
-cocoa
+Quatz and Infohub
+---------------
 
-django
+The chandelier software consists of two main applications: the Quatz application and the Infohub web application. Quatz_ is a Cocoa application that drives the screens by loading Web or Quartz Composer views. What is displayed by the Quatz application is determined by the Infohub application. Infohub_ is a Django python web site which allows users to upload Processing sketches and Quartz Composer files. These can then be displayed on the chandelier by changing the display mode on the infohub website.
 
-zeromq
+.. _Quatz: http://www.github.com/qmat/chandelier_quatz/
+.. _Infohub: http://www.github.com/qmat/chandelier_infohub/
 
-php
+Both applications are deployed on the Mac Mini. Access to the website from outside the university is achieved by using SSH tunnels. Currently the website is live at http://www.twobbler.net:9000.
 
-nginx
+The Infohub application does not only serve to administer the chandelier, it also aggregates updates from the web services the MAT group uses. Currently these are Google Docs, Github, GMail, qmat.net, qmat.net/wiki, twitter, and Vimeo. Infohub's python requirements can be installed by using pip on the requirements.txt file in that is in the root directory of the Infohub repository.
 
-gunicorn
+The Quatz and Infohub applications communicate using the ZeroMQ [#] library. The Quatz application can be manually started or stopped from the web site. The Infohub web application is daemonized by Apple's launchd and runs behind Nginx in a reverse proxy configuration.
 
-github
+.. image:: /qmat/chandelier_documentation/raw/master/files/software/deployment.png
 
-requirements.txt
 
-ssh tunnel
 
 Hardware
 ======
@@ -80,3 +80,4 @@ helmet cam
 
 
 .. [#] http://www.rhino3d.com/
+.. [3] http://www.zeromq.org/
