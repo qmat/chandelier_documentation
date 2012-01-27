@@ -11,8 +11,10 @@ Physical  design
 3D model
 --------
 
-The ``files/rhino_models/chandelier/`` directory contains a Rhino [#]_ model and several screenshots of the initial design of the chandelier. It shows two rings of the 17 inch Hannstar HSD170ME13 panels, although in the final product the outer ring is made up out of 19 inch screens.
- 
+This_ directory contains a Rhino [#]_ model and several screenshots of the initial design of the chandelier. It shows two rings of the 17 inch Hannstar HSD170ME13 panels, although in the final product the outer ring is made up out of 19 inch screens.
+
+.. _This: files/rhino_models/chandelier/
+
 .. image:: /qmat/chandelier_documentation/raw/master/files/rhino_models/chandelier/chandelier_screenshot2.png
 
 The specification for the ring can be found here_.
