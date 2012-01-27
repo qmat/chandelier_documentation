@@ -6,8 +6,6 @@ This repository holds the technical documentation and design files for the MATLa
 Physical  design
 ==========
 
-
-
 3D model
 --------
 
@@ -28,11 +26,10 @@ The screens hang from the ring with nylon straps. The ring is held up by four 5m
 
 .. _safety: files/safety_documentation/
 
-safety documentation
+The installation was done by a professional rigger. Ask Matt or Vincent about the contact details if necessary.
 
-Flint's, Josefin
-
-= Software and deployment =
+Software and deployment
+================
 
 cocoa
 
