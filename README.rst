@@ -21,7 +21,12 @@ The specification for the ring can be found here_.
 
 .. _here: /qmat/chandelier_documentation/raw/master/files/dimensions_steel_ring.png
 
-rigging
+Rigging
+------
+
+The screens hang from the ring with nylon straps. The ring is held up by four 5mm steel wires and the two are connected by a small nylon sling and Reutlingers. The steel wires finally connect to the I-beams with shackles and long slings. This repository also contains the safety_ documentation.
+
+.. _safety: files/safety_documentation/
 
 safety documentation
 
