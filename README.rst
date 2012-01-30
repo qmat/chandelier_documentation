@@ -53,7 +53,7 @@ The screens are driven by a single Mac Mini and two EMS Xtreme4vs [#]_ boxes. Ea
 
 .. image:: /qmat/chandelier_documentation/raw/master/files/hardware/configuration_screens.png
 
-The screens appear to the Mac Mini as two separate displays with a total resolution of 3200 by 600 pixels.
+The screens appear to the Mac Mini as two separate displays with a total resolution of 6400 by 600 pixels.
 
 .. [#] http://www.rhino3d.com/
 .. [#] http://www.zeromq.org/
