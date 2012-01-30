@@ -33,7 +33,7 @@ Software and deployment
 
 The chandelier software consists of two main applications: the Quatz application and the Infohub web application. Quatz_ is a Cocoa application that drives the screens by loading Web or Quartz Composer views. What is displayed by the Quatz application is determined by the Infohub application. Infohub_ is a Django python web site which allows users to upload Processing sketches and Quartz Composer files. These can then be displayed on the chandelier by changing the display mode on the infohub website.
 
-.. _Quatz: http://www.github.com/qmat/chandelier_quatz/
+.. _Quatz: http://www.github.com/qmat/chandelier_displayer/
 .. _Infohub: http://www.github.com/qmat/chandelier_infohub/
 
 Both applications are deployed on the Mac Mini. Access to the website from outside the university is achieved by using SSH tunnels. Currently the website is live at http://www.twobbler.net:9000.
